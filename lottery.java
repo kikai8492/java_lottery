@@ -70,6 +70,10 @@ class lottery {
 
         Scanner scanner2 = new Scanner(System.in);
         int deleteMember = scanner2.nextInt();
+        if (members.length <= deleteMember) {  
+          System.out.println("そのメンバーは存在しません。");
+          continue;
+        }
         list.remove(deleteMember);
 
         String[] newMembers = (String[]) list.toArray(new String[list.size()]);
@@ -88,7 +92,11 @@ class lottery {
 
           Scanner scanner3 = new Scanner(System.in);
           int newMembersSelect = scanner3.nextInt();
-
+          if (newMembers.length < newMembersSelect) {
+            System.out.println("0か1を入力してください。");
+            continue;
+          }
+        
           if (newMembersSelect == 0 ) {
 
             Random random = new Random();
@@ -126,6 +134,10 @@ class lottery {
             }
 
             int deleteMember2 = scanner3.nextInt();
+            if (newMembers.length <= deleteMember2) {  
+              System.out.println("そのメンバーは存在しません。");
+              continue;
+            }
             List<String> newList = new ArrayList<String>(Arrays.asList(newMembers));
             newList.remove(deleteMember2);
 
