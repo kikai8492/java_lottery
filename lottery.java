@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-class lottery {
+class Lottery {
   public void selectMember() {
     System.out.println("司会者抽選プロブラムへようこそ！");
     try {
@@ -26,9 +26,9 @@ class lottery {
     }
 
     while (true) {
-    System.out.println("本日おやすみの方はいらっしゃいますか？");
+      System.out.println("本日おやすみの方はいらっしゃいますか？");
 
-    System.out.println("0:いない 1:いる");
+      System.out.println("0:いない 1:いる");
 
       Scanner scanner = new Scanner(System.in);
       int selectNumber = scanner.nextInt(); 
@@ -165,7 +165,7 @@ class lottery {
 
 class drawingStart {
   public static void main(String[] args) {
-    lottery lottery = new lottery();
+    Lottery lottery = new Lottery();
     lottery.selectMember();
   }
 }
