@@ -163,7 +163,7 @@ class Lottery {
   }
 }
 
-class drawingStart {
+class lotteryStart {
   public static void main(String[] args) {
     Lottery lottery = new Lottery();
     lottery.selectMember();
