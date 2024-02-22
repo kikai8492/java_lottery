@@ -16,6 +16,7 @@ class Lottery {
     System.out.println("メンバーは以下の通りです。");
     
     String[] members = {"Aさん", "Bさん", "Cさん", "Dさん"};
+    
     for(int i = 0; i < members.length; i++) {
       System.out.println(members[i]);
     }
@@ -66,7 +67,7 @@ class Lottery {
         for(int i = 0; i < members.length; i++) {
           System.out.println(i + ":" + members[i]);
         }
-        List<String> list = new ArrayList<String>(Arrays.asList(members)); //配列をリストに変換するらしい
+        List<String> list = new ArrayList<String>(Arrays.asList(members)); //配列をリストに変換するらしい。理由は削除によって要素数が変わるから
 
         Scanner scanner2 = new Scanner(System.in);
         int deleteMember = scanner2.nextInt();
@@ -142,16 +143,16 @@ class Lottery {
             newList.remove(deleteMember2);
 
             newMembers = (String[]) newList.toArray(new String[newList.size()]);
+
             if (newMembers.length == 0) {
               System.out.println("メンバーがいなくなりました。");
               System.out.println("今日の朝礼は無しですね。にちゃー");
               System.exit(0); 
             }
             continue;
-
           } else {
             System.out.println("0か1を入力してください。");
-            continue;
+            // continue;
           }
         }
       } else {
