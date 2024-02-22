@@ -152,7 +152,7 @@ class Lottery {
             continue;
           } else {
             System.out.println("0か1を入力してください。");
-            // continue;
+            continue;
           }
         }
       } else {
