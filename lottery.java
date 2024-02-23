@@ -100,7 +100,7 @@ class Lottery {
         
           if (newMembersSelect == 0 ) {
 
-            Random random = new Random();
+            // Random random = new Random();
             int newIndex = random.nextInt(newMembers.length);
             String newLottery = newMembers[newIndex];
 
