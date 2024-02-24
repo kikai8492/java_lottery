@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-// class Lottery {
+class Lottery {
   public void selectMember() {
     System.out.println("司会者抽選プロブラムへようこそ！");
     try {
