@@ -13,7 +13,7 @@ class Lottery {
       e.printStackTrace();
     }
 
-    System.out.println("メンバーは以下の通りです。");
+    // System.out.println("メンバーは以下の通りです。");
     
     String[] members = {"Aさん", "Bさん", "Cさん", "Dさん"};
     
