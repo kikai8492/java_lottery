@@ -6,7 +6,7 @@ import java.util.Random;
 
 class Lottery {
   public void selectMember() {
-    // System.out.println("司会者抽選プロブラムへようこそ！");
+    System.out.println("司会者抽選プロブラムへようこそ！");
     try {
       Thread.sleep(1000);
     } catch (InterruptedException e) {
